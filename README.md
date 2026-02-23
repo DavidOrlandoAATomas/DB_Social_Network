@@ -51,7 +51,7 @@ Este projeto modela uma rede social contendo usuários, posts, páginas, comunid
 Execute:
 
 ```
-database/constraints.cypher
+constraints.cypher
 ```
 
 ### 3. Inserir Dados Iniciais
@@ -59,7 +59,7 @@ database/constraints.cypher
 Execute:
 
 ```
-database/seed_data.cypher
+seeds.cypher
 ```
 
 ---
@@ -72,7 +72,7 @@ Baseado em amigos em comum (Triadic Closure).
 
 Arquivo:
 ```
-algorithms/friend_recommendation.cypher
+friend_recommendation.cypher
 ```
 
 ---
@@ -83,7 +83,7 @@ Sugere posts não curtidos dentro de comunidades com maior afinidade.
 
 Arquivo:
 ```
-algorithms/post_recommendation.cypher
+content-based_filtering.cypher
 ```
 
 ---
