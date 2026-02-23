@@ -1,0 +1,24 @@
+CREATE CONSTRAINT user_id_unique IF NOT EXISTS
+FOR (u:Usuario)
+REQUIRE u.id IS UNIQUE;
+
+CREATE CONSTRAINT post_id_unique IF NOT EXISTS
+FOR (p:Post)
+REQUIRE p.id IS UNIQUE;
+
+CREATE CONSTRAINT comment_id_unique IF NOT EXISTS
+FOR (c:Comentario)
+REQUIRE c.id IS UNIQUE;
+
+CREATE CONSTRAINT page_id_unique IF NOT EXISTS
+FOR (pg:Pagina)
+REQUIRE pg.id IS UNIQUE;
+
+CREATE CONSTRAINT community_id_unique IF NOT EXISTS
+FOR (c:Comunidade)
+REQUIRE c.id IS UNIQUE;
+
+CREATE CONSTRAINT subject_id_unique IF NOT EXISTS
+FOR (a:Assunto)
+REQUIRE a.id IS UNIQUE;
+
